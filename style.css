@@ -1,0 +1,133 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.outbox{
+    border: solid 1px;
+    height: 180px;
+    display: flex;
+}
+#in1,#in2,#in3{
+    border: solid 1px;
+    height: 180px;
+
+}
+#in1{
+    width: 180px;
+}
+#in2{
+    width: 800px;
+    text-align: center;
+}
+#in3{
+    width: 400px;
+}
+#clgname{
+    font-size: 43px;
+    color: red;
+}
+#name1{
+    font-size: 22px;
+}
+#scrolltext{
+    font-size: 40px;
+    color: maroon;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+}
+#navbox{
+    border: solid 1px;
+    height: 50px;
+}
+ul li{
+    border: solid 1px;
+    height: 50px;
+    width: 189px;
+    float: left;
+    background-color: blanchedalmond;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 14px;;
+}
+ul{
+    list-style: none;
+}
+ul li a{
+    font-size: 23px;
+    color: blue;
+    text-decoration: none;
+
+}
+ul li ul li{
+    display: none;
+}
+ul li:hover ul li{
+    display: block;
+
+}
+ul li:hover{
+    background-color: darksalmon;
+}
+.outerbox{
+    border: solid 1px;
+    height: 400px;
+    display: flex;
+    justify-content: space-between;
+    /* background-color: blanchedalmond; */
+}
+#inbox1,#inbox2,#inbox3{
+    border: solid 1px;
+    height: 400px;
+    z-index: -1;
+}
+#inbox1{
+    width: 600px;
+    background-image: url(bits6.jpg);
+    background-repeat: no-repeat;
+    background-size: 600px 400px;
+    animation-name: imgchange;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+@keyframes imgchange {
+    0%{
+        background-image: url(bits1.jpg);
+    }
+    10%{
+        background-image: url(bits2.jpg);
+    }
+    20%{
+        background-image: url(bits3.jpg);
+    }
+    30%{
+        background-image: url(bits4.jpg);
+    }
+    40%{
+        background-image: url(bits5.jpg);
+    }
+    50%{
+        background-image: url(bits6.jpg);
+    }
+
+    
+}
+#inbox2{
+    width: 300px;
+    text-align: center;
+    background-color: aquamarine;
+
+}
+#Chairmanname{
+    font-size: 30px;
+    color: navy;
+   
+}
+#inbox3{
+    width: 300px;
+    text-align: center;
+    background-color: aquamarine;
+}
+#principalname{
+    font-size: 30px;
+    color: navy;
+}
